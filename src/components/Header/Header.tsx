@@ -9,9 +9,9 @@ const Header: React.FC = () => {
     return (
         <div className="header">
             <div className="container">
-                <Link to="/">
+                <Link to="/Jo-Jo-Pizza/">
                     <div className="header__logo">
-                        <img width={38} height={38} src="/img/logo.png" alt="Pizza logo" />
+                        <img width={38} height={38} src="img/logo.png" alt="Pizza logo" />
                         <div>
                             <h1>Jo Jo Pizza</h1>
                         </div>
