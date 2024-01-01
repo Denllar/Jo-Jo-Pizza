@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Jo%20Jo%20Pizza/static/css/main.b28082f0.css",
+    "main.js": "/Jo%20Jo%20Pizza/static/js/main.985b5bb9.js",
+    "index.html": "/Jo%20Jo%20Pizza/index.html",
+    "main.b28082f0.css.map": "/Jo%20Jo%20Pizza/static/css/main.b28082f0.css.map",
+    "main.985b5bb9.js.map": "/Jo%20Jo%20Pizza/static/js/main.985b5bb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b28082f0.css",
+    "static/js/main.985b5bb9.js"
+  ]
+}
