@@ -1,0 +1,36 @@
+.root {
+    padding: 10px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    width: 300px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    &:hover{
+        border: 2px solid rgb(117, 117, 117);
+    }
+
+    &:focus {
+        border: 2px solid rgb(117, 117, 117);
+        width: 320px;
+    }
+    &:has(input:focus){
+        border: 2px solid rgb(117, 117, 117);
+        width: 320px;
+    }
+    input {
+        border: none;
+        width: 400px;
+    }
+
+    img {
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
