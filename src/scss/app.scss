@@ -440,16 +440,12 @@ body {
       line-height: 145.4%;
       letter-spacing: 0.01em;
       color: #777777;
+      margin-bottom: 40px;
     }
 
     icon {
       position: relative;
       top: 2px;
-    }
-    img {
-      display: block;
-      width: 200px;
-      margin: 45px auto 60px;
     }
 
     .button--black {
@@ -467,11 +463,6 @@ body {
 
       p {
         font-size: 10px;
-        margin-bottom: 40px;
-      }
-
-      img{
-        width: 100px;
       }
 
       .button--black {
