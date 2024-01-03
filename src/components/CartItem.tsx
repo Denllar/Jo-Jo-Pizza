@@ -17,7 +17,6 @@ const CartItem: React.FC<CartType> = ({ id, title, imageUrl, price, size, type, 
             alt="Pizza" />
         </div>
 
-
         <div className="cart__item-info">
           <h3>{title}</h3>
           <p>{type}, {size} см.</p>

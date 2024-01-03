@@ -32,8 +32,8 @@ const Pizza: React.FC = () => {
         <div className='container'>
             <div className='container-pizza'>
                 <img src={getPizza.imageUrl} alt='pizzaImage' />
-                <div className='container-pizza--info'>
-                    <div className='container-pizza--info'>
+                <div className='container-pizza--infoBtn'>
+                    <div className='container-pizza--infoBtn--info'>
                         <h2>{getPizza.title}</h2>
                         <p><span>Состав:</span> {getPizza.compound}</p>
                     </div>
