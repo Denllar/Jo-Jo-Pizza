@@ -49,12 +49,8 @@ const pizzaSlice = createSlice({
     name: 'pizza',
     initialState,
     reducers: {
-        setItems(state, action) {
-            state.items = action.payload;
-        },
         setInvertBtn(state) {
             state.invertBtn = !state.invertBtn;
-            console.log(state.invertBtn);   
         },
     },
     extraReducers: (builder) => {
@@ -74,5 +70,5 @@ const pizzaSlice = createSlice({
 })
 
 
-export const { setItems, setInvertBtn } = pizzaSlice.actions;
+export const { setInvertBtn } = pizzaSlice.actions;
 export default pizzaSlice.reducer;

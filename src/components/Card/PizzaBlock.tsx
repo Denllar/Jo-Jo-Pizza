@@ -1,10 +1,9 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { setAddCart } from '../../redux/slices/cartSlice';
+import { setAddCart, setLogInfo } from '../../redux/slices/cartSlice';
 import { Link } from 'react-router-dom';
 import { CartType } from '../../redux/slices/cartSlice';
 import { countCartSlice } from '../../redux/slices/cartSlice';
-import { useAppDispatch } from '../../redux/hook';
+import { useAppDispatch, useAppSelector } from '../../redux/hook';
 
 export type PizzaBlockProps = {
     id: number, 
@@ -19,9 +18,9 @@ export type PizzaBlockProps = {
 const Card: React.FC<PizzaBlockProps> = ({ id, title, imageUrl, price, sizes, types, rating }) => {
     const [activeSize, setActiveSize] = React.useState(0);
     const [activeType, setActiveType] = React.useState(0);
-    const typeName = ['тоноке', 'традиционное'];
+    const typeName = ['тонкое', 'традиционное'];
     const dispatch = useAppDispatch();
-    const countCart = useSelector(countCartSlice(id));
+    const countCart = useAppSelector(countCartSlice(id));
     const addedCount = countCart ? countCart.count : 0;
     const item: CartType = {
         id,
@@ -41,7 +40,7 @@ const Card: React.FC<PizzaBlockProps> = ({ id, title, imageUrl, price, sizes, ty
         <div className='pizza-block-wrapper'>
             <div className='pizza-block'>
                 <Link to={"/pizza/" + id}>
-                    <img className="pizza-block__image"
+                    <img onClick={()=>setLogInfo(item)} className="pizza-block__image"
                         src={imageUrl}
                         alt="Pizza" />
                 </Link>

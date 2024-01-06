@@ -28,6 +28,9 @@ const cartSlice = createSlice({
     name: 'cartSlice',
     initialState,
     reducers: {
+        setLogInfo(state, action){
+
+        },
         setAddCart(state, action) {
             const findItem = state.cart.find(obj => obj.id === action.payload.id);       
             if (findItem) {
@@ -62,5 +65,5 @@ const cartSlice = createSlice({
 
 export const countCartSlice = (id: number) => (state: RootState) => state.cartSlice.cart.find(obj => obj.id === id);
 
-export const { setAddCart, minusItem, setRemoveCart, setClearCart } = cartSlice.actions;
+export const { setAddCart, minusItem, setRemoveCart, setClearCart, setLogInfo } = cartSlice.actions;
 export default cartSlice.reducer;
