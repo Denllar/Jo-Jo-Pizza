@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     return (
         <div className="header">
             <div className="container">
-                <Link to="/Jo-Jo-Pizza/">
+                <Link to="/Jo-Jo-Pizza">
                     <div className="header__logo">
                         <img width={38} height={38} src="img/logo.png" alt="Pizza logo" />
                         <div>
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                 </Link>
 
                 {
-                    location.pathname === '/' && <Search />
+                    location.pathname === '/Jo-Jo-Pizza' && <Search />
                 }
                 
                 {location.pathname !== '/cart' && 
