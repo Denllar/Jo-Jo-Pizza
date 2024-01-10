@@ -4,7 +4,7 @@
     margin-bottom: 20px;
     border: 2px solid rgb(187, 187, 187);
     border-radius: 20px;
-    width: 300px;
+    width: 230px;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
@@ -14,15 +14,15 @@
 
     &:focus {
         border: 2px solid rgb(117, 117, 117);
-        width: 320px;
+        width: 250px;
     }
     &:has(input:focus){
         border: 2px solid rgb(117, 117, 117);
-        width: 320px;
+        width: 250px;
     }
     input {
         border: none;
-        width: 400px;
+        width: 350px;
     }
 
     img {

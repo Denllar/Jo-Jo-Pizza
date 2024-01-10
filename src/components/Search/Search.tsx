@@ -31,7 +31,6 @@ const Search: React.FC = () => {
       {
         searchValue && <img onClick={onClickClear} width={18} src="./img/clear.svg" alt='clear' />
       }
-
     </div>
   )
 }
