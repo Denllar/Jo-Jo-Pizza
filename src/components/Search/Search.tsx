@@ -18,8 +18,7 @@ const Search: React.FC = () => {
   const testDebounce = React.useCallback(
     debounce((str: string) => {
       dispatch(setSearchValue(str));
-    }, 800), []
-  )
+    }, 800), []);
 
   const onChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setSearchValue(event.target.value));

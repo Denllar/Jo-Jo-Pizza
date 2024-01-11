@@ -22,7 +22,7 @@ const Header: React.FC = () => {
                     location.pathname === '/Jo-Jo-Pizza/' && <Search />
                 }
                 
-                {location.pathname !== '/cart/' && 
+                {location.pathname !== '/cart' && 
                     <div className="header__cart">
                         
                         <Link to="/cart" className="button button--cart">
