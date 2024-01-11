@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Jo-Jo-Pizza/static/css/main.aadcd015.css",
-    "main.js": "/Jo-Jo-Pizza/static/js/main.c1282322.js",
+    "main.css": "/Jo-Jo-Pizza/static/css/main.09eca25f.css",
+    "main.js": "/Jo-Jo-Pizza/static/js/main.c2d5f36b.js",
     "index.html": "/Jo-Jo-Pizza/index.html",
-    "main.aadcd015.css.map": "/Jo-Jo-Pizza/static/css/main.aadcd015.css.map",
-    "main.c1282322.js.map": "/Jo-Jo-Pizza/static/js/main.c1282322.js.map"
+    "main.09eca25f.css.map": "/Jo-Jo-Pizza/static/css/main.09eca25f.css.map",
+    "main.c2d5f36b.js.map": "/Jo-Jo-Pizza/static/js/main.c2d5f36b.js.map"
   },
   "entrypoints": [
-    "static/css/main.aadcd015.css",
-    "static/js/main.c1282322.js"
+    "static/css/main.09eca25f.css",
+    "static/js/main.c2d5f36b.js"
   ]
 }
