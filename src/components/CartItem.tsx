@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import { setAddCart, minusItem, setRemoveCart } from '../redux/slices/cartSlice';
 import { CartType } from '../redux/slices/cartSlice';
 import { useAppDispatch } from '../redux/hook';
@@ -11,12 +11,13 @@ const CartItem: React.FC<CartType> = ({ id, title, imageUrl, price, size, type, 
   return (
     <div className="content__items">
       <div className="cart__item">
+      <Link to={"/pizza/" + id}>
         <div className="cart__item-img">
           <img className="pizza-block__image"
             src={imageUrl}
             alt="Pizza" />
         </div>
-
+      </Link>
 
         <div className="cart__item_mainWrapper">
           <div className="cart__item-info">
