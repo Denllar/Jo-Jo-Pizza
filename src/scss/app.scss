@@ -359,10 +359,16 @@ body {
       }
     }
     &__clear{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
       @media(max-width:380px){
         span{
           display: none;
         }
+      }
+      svg{
+        margin-right: 5px;
       }
     }
   }
