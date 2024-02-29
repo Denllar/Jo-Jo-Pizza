@@ -4,6 +4,7 @@
 
 Stack:  
 » HTML&CSS / SCSS  
+» React  
 » JavaScript  
 » TypeScript
 
